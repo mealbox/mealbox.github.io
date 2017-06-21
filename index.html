@@ -48,17 +48,32 @@
 
     </nav>
 
-    <div class="jumbotron text-center">
-        <img src="mealbox.jpg" class="pic">
-
-        <h1>MealBox</h1>
-       
-    </div>
+    <div class="jumbotron front">
+   <h1 class="meal">MealBox</h1>
+  <p class="coming"> Coming to a location near you<p>
+   
+<p id="demo"></p>
+  </div>
 
 <!-- Container (About Section) -->
      <div id="about" class="container-fluid">
          
           <p class="contact2 text-center">About Mealbox</p>
+         <img class="mealbox" src="mealbox.jpg">
+         <h3 class="represent">What Mealbox Represents</h3>
+         <br>
+         <p class="description"> wasff</p>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
+         <br>
          
      </div>  
      <div id="Meals" class="container-fluid offer">
@@ -128,7 +143,7 @@
         </div>
 
   <p class="support">Help us make Mealbox become a reality</p>
-            <p class="support">To Learn more, please visit our crowdfunding page <a class="here">here</a></p>
+            <p class="support2">To Learn more, please visit our crowdfunding page <a class="here">here</a></p>
                 </div>
                 
     
@@ -152,7 +167,7 @@
                 <li class="contact-us"><span class="glyphicon glyphicon-map-marker"></span> Ottawa, Ontario</li>
                 <li class="contact-us"><span class="glyphicon glyphicon-phone"></span> +1 800 MEAL BOX</li>
                 <li class="contact-us"><span class="glyphicon glyphicon-envelope"></span> MealBox@BestNewProducts.ca</li>
-                <li class="contact-us"><img src="images/linkedin.png" class="linkedin" <span>@Mealbox</span>
+                <li class="contact-us"><img src="twitter.png" class="twitter" <span>@Mealbox</span>
                 </li>
 
             </ul>
@@ -232,7 +247,38 @@
                             collapsedHeight: 190
                         })};
         });</script>
-     
+     <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+
+
       
     </body>
         

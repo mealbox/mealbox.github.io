@@ -6,9 +6,6 @@ html {
     overflow-x: hidden;
 }
 
-.brief {
-    color: white;
-}
 
 h2 {
     font-size: 24px;
@@ -26,34 +23,49 @@ h4 {
     margin-bottom: 10px;
 }
 
-.jumbotron {
-    background-image: url(maxresdefault.jpg);
+
+.front{
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScO_LwO1SDZ9Yb4VM0Vw3EzVsemR9TsYd-Igiwc_JNul5Xsrlv');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 0;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
     color: #ffffff;
-    padding: 100px 25px;
     font-family: Montserrat, sans-serif;
+    height: 500px;
 }
+  
+  #demo{
+      margin-top: 100px;
+      text-align:center;
+      font-size: 60px;
+        word-spacing: 50px;
+         color: white !important;
+  }
+  .meal{
+    font-size: 99px !important;
+    text-align:center;
+    padding-top: 40px !important;
+      color: white !important;
+  }
+  .coming{
+    font-size: 15px !important;
+      text-align:center;
+       color: white !important;
+  }
 
-.book {
-    margin-top: 160px;
+.mealbox{
+    width:20%;
+    position: absolute;
+    display: inline;
+    margin-top: 20px;
+    margin-left: 950px;
 }
-
-.pic {
-    max-height: 250px;
+  
+.represent{
+    margin-top: 30px;
 }
-
-.ask {
-    color: black;
-    padding: 10px 10px 10px 0;
-}
-
-.linkedin {
-    height: 18px;
-    width: 17px;
-}
-
+  
 .container-fluid {
     padding: 60px 50px;
     background-color: white;
@@ -214,9 +226,10 @@ table {
 }
 
 .description {
-    color: black;
-    line-height: 20px;
-    margin-top: 10px;
+    
+   color: #615f5e;
+    font-family: sans-serif;
+    font-size: 17px;
 }
 
 tr {
@@ -228,7 +241,11 @@ tr {
     color: #000000
 }
 
-
+.twitter{
+    width:15%;
+    margin-right: 5px;
+    margin-bottom: 8px;
+}
 /* card css */
 
 .card {
@@ -277,8 +294,8 @@ tr {
     text-decoration: none;
 }
 
-.projects {
-    padding: 10px 0;
+.support{
+    padding-bottom: 50px;
 }
 
 body {
@@ -599,7 +616,7 @@ h1 {
   text-shadow:1px 1px 0px rgba(255,255,255,0.3);
 }
 p {
-  font-size:1.2rem;
+  font-size:17px;
   font-weight:300;
   line-height:1.8rem;
   color:rgba(0,0,0,0.8);
@@ -791,7 +808,7 @@ margin-top: 2px;
 }
 
 .click{
-padding-bottom:50px !important;
+padding-bottom:20px !important;
 }
 
 #amount{
