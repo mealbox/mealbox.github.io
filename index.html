@@ -62,7 +62,11 @@
          <img class="mealbox" src="mealbox.jpg">
          <h3 class="represent">What Mealbox Represents</h3>
          <br>
-         <p class="description"> wasff</p>
+         <div class="col-sm-6">
+            
+         <p class="description"> The MealBox is a branded vending machine, which dispenses affordable wholesome healthy meals. The first row serves breakfast items, the second row serves lunch items, the mid row serve dinner items, the bottom row consists of desserts, and finally, the last row will contain beverages. These vending machines are built extremely high tech with built in heating and cooling capabilities. The heat from the cooling process from the energy-saving thermal technology is recycled to heat the warm products. This allows meals to be dispensed warm and ready to be eaten on the spot. Also, it allows cool drinks and desserts to go along with the meals. Our vending machines will have LED screen with video and voice capabilities. Videos will be playing during the waiting time while the food is getting prepared. However, if our consumers prefer, they can use the video game capabilities offered in selective vending machines during the wait time. These vending machines bring value to consumers as they have quick access to wholesome healthy meals 24/7, prepared in minutes.</p>
+  </div>
+                 
          <br>
          <br>
          <br>
@@ -86,7 +90,7 @@
                             <img src="hot.jpg" class="img-responsive card-img">
                             <div class="card-content">
                                 <h1>Hot Foods</h1>
-                                <p>Prepared on the day the foods are stored in the vending machine and heated by our ElectricHeater 3000</p>
+                                <p>Prepared hot and ready to go</p>
                                 <a>View Selections</a>
                             </div>
                         </div>
@@ -99,7 +103,7 @@
                             <img src="cold.jpg" class="img-responsive card-img">
                             <div class="card-content">
                                 <h1>Cold Foods</h1>
-                                <p>They're cold and that's cool</p>
+                                <p>Served cold, yet satisfying</p>
                                 <a>View Selections</a>
 
                             </div>
@@ -111,7 +115,7 @@
                             <div class="card-content">
                                 <h2 class="row" id="count"></h2>
                                 <h1>Desserts</h1>
-                                <p>Delicious - insert text-</p>
+                                <p>Just as sweet as the photo suggests</p>
                                 <a>View Selections</a>
                                 <br>
 
@@ -143,7 +147,7 @@
         </div>
 
   <p class="support">Help us make Mealbox become a reality</p>
-            <p class="support2">To Learn more, please visit our crowdfunding page <a class="here">here</a></p>
+            <p class="support2">To Learn more, please visit our crowdfunding page <a class="here" href="https://www.generosity.com/fundraising/mealbox" target="blank">here</a></p>
                 </div>
                 
     
@@ -166,7 +170,7 @@
             <ul class="list-unstyled">
                 <li class="contact-us"><span class="glyphicon glyphicon-map-marker"></span> Ottawa, Ontario</li>
                 <li class="contact-us"><span class="glyphicon glyphicon-phone"></span> +1 800 MEAL BOX</li>
-                <li class="contact-us"><span class="glyphicon glyphicon-envelope"></span> MealBox@BestNewProducts.ca</li>
+                <li class="contact-us"><span class="glyphicon glyphicon-envelope"></span> Contact@Mealbox.ca</li>
                 <li class="contact-us"><img src="twitter.png" class="twitter" <span>@Mealbox</span>
                 </li>
 
@@ -249,7 +253,7 @@
         });</script>
      <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2018 15:37:25").getTime();
+var countDownDate = new Date("Aug 1, 2017 15:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -276,6 +280,43 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+         
+        $(document).ready(function() {
+    // Configure/customize these variables.
+    var showChar = 100;  // How many characters are shown by default
+    var ellipsestext = "...";
+    var moretext = "Show more";
+    var lesstext = "Show less";
+    
+
+    $('.description').each(function() {
+        var content = $(this).html();
+ 
+        if(content.length > showChar) {
+ 
+            var c = content.substr(0, showChar);
+            var h = content.substr(showChar, content.length - showChar);
+ 
+            var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+ 
+            $(this).html(html);
+        }
+ 
+    });
+ 
+    $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+            $(this).removeClass("less");
+            $(this).html(moretext);
+        } else {
+            $(this).addClass("less");
+            $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+    });
+});
 </script>
 
 

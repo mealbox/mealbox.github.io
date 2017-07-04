@@ -64,6 +64,8 @@ h4 {
   
 .represent{
     margin-top: 30px;
+    margin-left: 13px;
+
 }
   
 .container-fluid {
@@ -230,6 +232,7 @@ table {
    color: #615f5e;
     font-family: sans-serif;
     font-size: 17px;
+    line-height: 1.8;
 }
 
 tr {
